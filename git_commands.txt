@@ -1,0 +1,189 @@
+# Git Commands Documentation
+
+Project Name: Git_Workflow_Project  
+Student Name: Nitesh Kumar  
+BITS ID: 2023EB03242
+
+## 1. Git Configuration
+
+**git config --global user.name "Nitesh Kumar"**
+
+Sets the name used to identify the author of Git commits.
+
+**git config --global user.email "YOUR_GITHUB_EMAIL"**
+
+Sets the email address associated with Git commits.
+
+**git config --global user.name**
+
+Displays the configured Git username.
+
+**git config --global user.email**
+
+Displays the configured Git email address.
+
+## 2. Repository Setup
+
+**cd ~/Desktop**
+
+Navigates to the Desktop directory.
+
+**mkdir Git_Workflow_Project**
+
+Creates the project directory.
+
+**cd Git_Workflow_Project**
+
+Enters the project directory.
+
+**git init**
+
+Initializes a new local Git repository.
+
+**git branch -M main**
+
+Renames the current branch to main.
+
+**pwd**
+
+Displays the current working directory.
+
+**ls**
+
+Lists files and folders in the current directory.
+
+## 3. Adding and Committing Files
+
+**git status**
+
+Displays the current repository status and modified or untracked files.
+
+**git add index.html about.html**
+
+Stages the HTML files for the initial commit.
+
+**git commit -m "Initial commit: Add HTML project files"**
+
+Creates the first commit containing the project files.
+
+**git add index.html**
+
+Stages changes made to the homepage.
+
+**git commit -m "Update homepage with Git learning information"**
+
+Records the homepage modification in Git history.
+
+## 4. Branching and Merging
+
+**git branch feature**
+
+Creates a new branch named feature.
+
+**git switch feature**
+
+Switches from the main branch to the feature branch.
+
+**git add about.html**
+
+Stages the changes made to about.html.
+
+**git commit -m "Add project features on feature branch"**
+
+Commits the changes to the feature branch.
+
+**git switch main**
+
+Switches back to the main branch.
+
+**git merge feature**
+
+Merges the feature branch into the main branch.
+
+**git branch**
+
+Displays the available local branches and the currently active branch.
+
+**git log --oneline**
+
+Displays the commit history in a compact format.
+
+**git log --oneline --graph --all**
+
+Displays all branch histories and their relationships graphically.
+
+## 5. .gitignore Implementation
+
+**notepad .gitignore**
+
+Creates or opens the .gitignore file in Notepad.
+
+**mkdir temp**
+
+Creates a temporary folder to test Git ignore functionality.
+
+**git status --ignored**
+
+Displays the repository status, including ignored files and folders.
+
+**git add .gitignore**
+
+Stages the .gitignore file.
+
+**git commit -m "Add gitignore for log files and temp folder"**
+
+Commits the ignore configuration.
+
+## 6. Undo Operation
+
+**git add index.html**
+
+Stages the additional homepage modification.
+
+**git commit -m "Add temporary paragraph for undo demonstration"**
+
+Creates an additional commit for demonstrating the undo operation.
+
+**git revert HEAD**
+
+Reverses the changes introduced by the latest commit while preserving Git history.
+
+## 7. GitHub Integration
+
+**git remote add origin https://github.com/niteshkumar220325-rgb/Git_Workflow_Project.git**
+
+Connects the local repository to the public GitHub repository.
+
+**git remote -v**
+
+Displays the configured remote repository URLs.
+
+**git pull origin main --allow-unrelated-histories**
+
+Fetches and merges the existing GitHub main branch history with the local repository history.
+
+**git push -u origin main**
+
+Uploads the main branch to GitHub and establishes upstream tracking.
+
+**git push -u origin feature**
+
+Uploads the feature branch to GitHub and establishes upstream tracking.
+
+## 8. Verification Commands
+
+**cat index.html**
+
+Displays the contents of the index.html file.
+
+**git status**
+
+Verifies whether the working directory is clean.
+
+**git log --oneline --graph --all**
+
+Verifies the complete commit history and branch activity.
+
+---
+
+End of Git Commands Documentation.
